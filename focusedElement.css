@@ -1,0 +1,5 @@
+.ext-focused-element {
+	-webkit-box-shadow: 0px 0px 15px 3px rgba(217,17,137,1);
+	-moz-box-shadow: 0px 0px 15px 3px rgba(217,17,137,1);
+	box-shadow: 0px 0px 15px 3px rgba(217,17,137,1);
+}

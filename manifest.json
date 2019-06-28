@@ -1,0 +1,33 @@
+{
+	"name": "Focus Highlighter",
+	"version": "1.0",
+	"description": "Focus highlighter is a debugging tool that makes it easy to see which element on a webpage is focused.",
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+	"page_action": {
+		"default_popup":"popup.html",
+		"default_icon": {
+			"16": "imgs/16.png",
+			"32": "imgs/32.png",
+			"192": "imgs/192.png",
+			"512": "imgs/512.png"
+		}
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": ["contentScript.js"],
+			"css": ["focusedElement.css"]
+		}
+	],
+	"icons": {
+		"16": "imgs/16.png",
+		"32": "imgs/32.png",
+		"192": "imgs/192.png",
+		"512": "imgs/512.png"
+	},
+	"permissions": ["storage", "declarativeContent", "activeTab"],
+	"manifest_version": 2	
+}
